@@ -181,7 +181,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
     } else {
       mergedOptions = defaultOptions;
     }
-    mergedOptions.chart.renderTo = element[0];
+   var dummy = document.createElement("div");
+    element.append(dummy);
+    mergedOptions.chart.renderTo = dummy;
 
     //check chart type is set
     return mergedOptions;
