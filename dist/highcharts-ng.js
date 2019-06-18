@@ -1,6 +1,6 @@
 /**
  * highcharts-ng
- * @version v1.2.2-dev - 2018-05-14
+ * @version v1.2.2-dev - 2019-06-18
  * @link https://github.com/pablojim/highcharts-ng
  * @author Barry Fitzgerald <>
  * @license MIT License, http://www.opensource.org/licenses/MIT
@@ -189,7 +189,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
     } else {
       mergedOptions = defaultOptions;
     }
-    mergedOptions.chart.renderTo = element[0];
+   var dummy = document.createElement('div');
+    element.append(dummy);
+    mergedOptions.chart.renderTo = dummy;
 
     //check chart type is set
     return mergedOptions;
