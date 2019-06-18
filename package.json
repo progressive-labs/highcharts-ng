@@ -1,6 +1,6 @@
 {
   "name": "highcharts-ng",
-  "version": "1.2.2-dev",
+  "version": "1.2.3",
   "description": "highcharts-ng",
   "keywords": [
     "angular"
@@ -48,6 +48,5 @@
     "test": "grunt test"
   },
   "main": "./dist/highcharts-ng",
-  "dependencies": {
-  }
+  "dependencies": {}
 }
